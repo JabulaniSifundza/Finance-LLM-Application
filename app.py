@@ -4,8 +4,9 @@ import numpy as np
 import google.generativeai as palm
 import yfinance as yf
 import requests
-import chromadb
-from chromadb.api.types import Documents, Embeddings
+from langchain.embeddings.google_palm import GooglePalmEmbeddings
+from langchain.llms import GooglePalm
+from langchain.chains.question_answering import load_qa_chain
 
 app = Flask(__name__)
 
