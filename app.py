@@ -13,15 +13,12 @@ from pypfopt.efficient_frontier import EfficientFrontier
 from pypfopt import risk_models
 from pypfopt import expected_returns
 import math
-import keras
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
 import pandas_datareader.data as web
-from tensorflow import keras
 import json
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def home():
